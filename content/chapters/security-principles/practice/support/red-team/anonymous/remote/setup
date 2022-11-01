@@ -1,0 +1,60 @@
+#!/bin/bash
+
+password="anonymous-account-pass"
+
+if test $(id -u) -ne 0; then
+    echo "You must run this script as root." 1>&2
+    exit 1
+fi
+
+create_ctf_user()
+{
+    # Create user if it does not exist.
+    if ! id ctf > /dev/null 2>&1; then
+        useradd -m -d /home/ctf -s /bin/bash ctf
+    fi
+    # Disable password for account (can't login with password).
+    passwd -l ctf > /dev/null
+    # Prevent password changing.
+    passwd -n 9999 ctf > /dev/null
+    # Prevent ctf user from writing to home folder.
+    chown -R root:ctf /home/ctf
+    chmod 750 /home/ctf
+}
+
+copy_secret_to_ctf_user()
+{
+    cp secret /home/ctf/secret
+    chown root:ctf /home/ctf/secret
+}
+
+configure_ftp()
+{
+    echo ctf >> /etc/vsftpd.userlist
+    mkdir -p /home/ctf/ftp-dir
+    chmod -R 750 /home/ctf/ftp-dir
+    chmod -R o+rx /home/ctf/ftp-dir
+    chown -R root:ftp /home/ctf/ftp-dir
+    echo "pasv_min_port=65400" >> /etc/vsftpd.conf
+    echo "pasv_max_port=65500" >> /etc/vsftpd.conf
+    echo "anon_root=/home/ctf/ftp-dir" >> /etc/vsftpd.conf
+    echo "anonymous_enable=YES" >> /etc/vsftpd.conf
+    echo "local_enable=NO" >> /etc/vsftpd.conf
+    echo "ctf:$password" >> /home/ctf/ftp-dir/credentials.txt
+}
+
+# Create ctf user if it does not exist and update password.
+create_ctf_user
+echo "ctf:$password" | chpasswd
+passwd -u ctf > /dev/null
+
+# secret must be unaccessible to ctf user.
+copy_secret_to_ctf_user
+
+# Configure ftp environment
+configure_ftp
+
+# Announce removal of files.
+echo
+echo "IMPORTANT: Remove all deployed files (secret, setup)."
+echo
