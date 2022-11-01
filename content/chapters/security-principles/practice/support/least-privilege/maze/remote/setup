@@ -1,0 +1,72 @@
+#!/bin/bash
+
+password="neverending-maze"
+
+if test $(id -u) -ne 0; then
+    echo "You must run this script as root." 1>&2
+    exit 1
+fi
+
+create_ctf_user()
+{
+    # Create user if it does not exist.
+    if ! id ctf > /dev/null 2>&1; then
+        useradd -m -d /home/ctf -s /bin/bash ctf
+    fi
+    # Disable password for account (can't login with password).
+    passwd -l ctf > /dev/null
+    # Prevent password changing.
+    passwd -n 9999 ctf > /dev/null
+    # Prevent ctf user from writing to home folder.
+    chown -R root:ctf /home/ctf
+    chmod 750 /home/ctf
+}
+
+create_user()
+{
+    # arguments:
+    # $1 is the username
+    # $2 is the password
+
+    # Create user if it does not exist.
+    if ! id $1 > /dev/null 2>&1; then
+        useradd -m -d /home/$1 -s /bin/bash $1
+    fi
+    # Disable password for account (can't login with password).
+    passwd -l $1 > /dev/null
+    # Prevent password changing.
+    passwd -n 9999 $1 > /dev/null
+    # Prevent $1 user from writing to home folder.
+    chown -R root:$1 /home/$1
+    chmod 750 /home/$1
+    # Set password for new user
+    echo "$1:$2" | chpasswd
+    passwd -u $1 > /dev/null
+}
+
+copy_secret_to_ctf_user()
+{
+    cp secret /home/ctf/secret
+    chown root:ctf /home/ctf/secret
+}
+
+# Create ctf user if it does not exist and update password.
+create_ctf_user
+echo "ctf:$password" | chpasswd
+passwd -u ctf > /dev/null
+
+# secret must be unaccessible to ctf user.
+copy_secret_to_ctf_user
+
+# Create the other users
+create_user "alice" "Alic3Pass"
+create_user "bob" "Boy0Boy"
+create_user "carl" "Carlit0s"
+
+# Add user `carl` to the `ctf` group so that `carl` can read secret
+usermod -a -G ctf carl
+
+# Announce removal of files.
+echo
+echo "IMPORTANT: Remove all deployed files (secret, setup)."
+echo
