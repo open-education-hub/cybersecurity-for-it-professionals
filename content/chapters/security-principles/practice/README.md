@@ -2,9 +2,9 @@
 
 ## Contents
 
-- [Terminologie Cybersecurity](./content/cybersecurity-terminology.md)
-- [Studii De Caz - Sisteme](./content/case-studies-attack-vectors-systems.md)
+- [Terminologie de securitate cibernetică](./content/cybersecurity-terminology.md)
+- [Studii de caz: sisteme](./content/case-studies-attack-vectors-systems.md)
 - [Red Team](./content/red-team.md)
-- [Studii De Caz - Persoane](./content/case-studies-attack-vectors-systems.md)
+- [Studii de caz: persoane](./content/case-studies-attack-vectors-systems.md)
 - [Blue Team](./content/blue-team.md)
-- [Principiul Celui Mai Mic Privilegiu](./content/least-privilege.md)
+- [Principiul celui mai mic privilegiu](./content/least-privilege.md)

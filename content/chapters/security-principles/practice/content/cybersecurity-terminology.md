@@ -1,6 +1,6 @@
-## Terminologie Cybersecurity
+## Terminologie de securitate cibernetică
 
-Toata lumea crede:
+Multe lume crede:
 
 > Nu am nimic valoros care sa ma transforme intr-o tinta
 
@@ -11,7 +11,7 @@ Multimea tintelor din cadrul unui system se cheama **suprafata de atac**.
 
 Tintele potentiale expun de obicei **vulnerabilitati** care mai tarziu vor fi **exploatate**.
 
-### Vulnerabilitate VS Exploit
+### Vulnerabilitate vs. exploit
 
 Pe scurt:
 
@@ -23,7 +23,7 @@ Oamenii sunt de asemenea vulnerabili.
 Un exemplu: oamenii pot fi *naivi*.
 Naivitatea poate fi foarte usor exploatata de un atacator care ar putea sa manipuleze persoana vulnerabila.
 
-### Suprafata De Atac
+### Suprafata de atac
 
 Tineti minte:
 
@@ -44,7 +44,7 @@ Imaginati-va procesul ca fiind un puzzle pe care atacatorul il rezolva.
 Piesele sunt legate impreuna intr-o anumita ordine creativa cu scopul de a atinge un obiectiv.
 Mai multe vulnerabilitati legate impreuna compun ceea ce se numeste un **attack vector** sau **attack chain**.
 
-### Vector De Atac
+### Vector de atac
 
 Un atac nu este un proces scurt, cu un singur pas.
 De cele mai multe ori implica o serie de pasi care uneori pot parea necorelati.
@@ -59,8 +59,7 @@ O companie poate fi atacata in multiple moduri:
 - Prin systemele sale
 - Prin distribuitori software de la care cumpara servicii sau produse
 
-
-### Cybersecurity Ca Proces
+### Securitatea ca proces (nu finalitate)
 
 Securitatea cibernetica nu este ceva ce obtii astazi si o vei avea mereu.
 Este un obiectiv pe termen lung si este o munca activa.

@@ -1,10 +1,10 @@
-## Attack Vector Case Studies - Systems
+## Studii de caz: sisteme
 
 In continuare vom prezenta exemple reale de  **vectori de atac** folositi impotriva sistemelor informatice.
 
 ### Stuxnet
 
-Malware de tip Vierme.
+Malware de tip **worm**.
 A fost facut initial pentru a ataca o anumita tinta.
 Tinta erau systemele care controla anumite turbine ale unei centrale nucleare.
 Dintr-o eroare umana intr-dusa in urma unui update, s-a raspandit la un laptop al unui angajat, dupa care in intreaga lume.
