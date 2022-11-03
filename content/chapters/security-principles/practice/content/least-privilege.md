@@ -44,6 +44,8 @@ Intrati in directorul `support/least-privilege/` si parcurgeti exercitiile de ma
 
    Care este motivul pentru care un anumit user poate vedea contintul fisierului `/home/ctf/secret`
    Enumerati si alte variante prin care se poate ajunge la rezultatul dorit.
+   
+   Testati concluziile exercitiului si la adresa `141.85.224.104:10222`.
 
 ### Quiz
 

@@ -178,7 +178,7 @@ Intrati in directorul `support/red-team/` si parcurgeti exercitiile de mai jos.
 
    Listati continutul fisierului `secret` disponibil la calea `/home/ctf/secret`.
 
-   Odata ce aveti un input care functioneaza corespunzator, incercati acelasi input si la adresa TODO.
+   Odata ce aveti un input care functioneaza corespunzator, incercati acelasi input si la adresa `141.85.224.104:10021`.
 
 1. Accesati directorul `pingme/remote/` si rulati comanda `make run`.
    Comanda va lansa in executie un container `Docker` aferent challenge-ului `pingme`.
@@ -207,7 +207,7 @@ Intrati in directorul `support/red-team/` si parcurgeti exercitiile de mai jos.
    Scopul este sa accesati fisierul `/secret` de pe server.
    Pentru a accesa acest fisier, folositi utilitarul `cat` si faptul ca aveti informatia ca fisierul cautat se afla sub calea `/secret`.
 
-   Odata ce aveti un input care functioneaza corespunzator, incercati acelasi input si la adresa TODO.
+   Odata ce aveti un input care functioneaza corespunzator, incercati acelasi input si la adresa `141.85.224.104:10002`.
 
 ### Quiz
 
