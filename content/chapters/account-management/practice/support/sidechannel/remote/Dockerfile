@@ -1,5 +1,5 @@
 # build: docker build -t citp-02_sidechannel .
-# run: docker run -dit --name citp-02_sidechannel -p 20002:1337 citp-02_sidechannel
+# run: docker run -dit --name citp-02_sidechannel -p 20102:1337 citp-02_sidechannel
 # stop: docker stop citp-02_sidechannel
 FROM ubuntu:20.04
 
