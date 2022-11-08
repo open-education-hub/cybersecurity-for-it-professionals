@@ -1,0 +1,6 @@
+### Ghicire Fraza 
+
+Exercițiul curent este o extensie a exercițiului ce ghicește o parolă.
+Daca în cazul unei parole, alfabetul era constituit din litere, în cazul curent alfabetul este reprezentat de cuvinte.
+
+Extindeți logica din primul exercițiu pentru a afla passphrase-ul secret.
