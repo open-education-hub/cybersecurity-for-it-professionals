@@ -48,8 +48,8 @@ Intrati in directorul `support/red-team/` si parcurgeti exercitiile de mai jos.
 
    - [How to Use Anonymous FTP](https://www.rfc-editor.org/rfc/rfc1635.html)
 
-   Userul `anonymous` este un user limitat facut cu scopul de a oferi acces public unor anumite resurse.
-   Informatia esentiala din resursa indicata este ca userul `anonymous` accepta orice parola.
+   Utilizatorul `anonymous` este un utilizator limitat facut cu scopul de a oferi acces public unor anumite resurse.
+   Informatia esentiala din resursa indicata este ca utilizatorul `anonymous` accepta orice parola.
 
    Drept urmare, putem folosi urmatoarea succesiune de actiuni in linie de comanda pentru a ne conecta la serverul ce ruleaza local:
 
@@ -128,7 +128,7 @@ Intrati in directorul `support/red-team/` si parcurgeti exercitiile de mai jos.
    Observam ca asta contine si fisierul nostru.
 
    Acum putem incerca sa folosim credentialele pentru a ne loga prin intermediul `SSH`.
-   Vom face acest lucru cu userul `ctf` si parola `anonymous-account-pass`.
+   Vom face acest lucru cu utilizatorul `ctf` si parola `anonymous-account-pass`.
    Comanda folosita este:
 
    ```
