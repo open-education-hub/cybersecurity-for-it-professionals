@@ -5,4 +5,4 @@ Programul nu are implementate protecții împotriva atacurilor de tip Brute Forc
 În consecință, odată generată, această parolă poate fi aflată prin încercări succesive.
 
 Implementați un program care sa încerce pe rând toate variantele posibile.
-Folosiți
+Folosiți scheletul de cod disponibil în fisierul `remote/solution.py`.
