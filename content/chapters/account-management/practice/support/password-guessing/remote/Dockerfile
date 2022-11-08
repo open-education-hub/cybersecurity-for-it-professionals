@@ -1,5 +1,5 @@
 # build: docker build -t citp-02_password-breaking .
-# run: docker run -dit --name citp-02_password-breaking -p 20000:1337 citp-02_password-breaking
+# run: docker run -dit --name citp-02_password-breaking -p 20100:1337 citp-02_password-breaking
 # stop: docker stop citp-02_password-breaking
 FROM ubuntu:20.04
 

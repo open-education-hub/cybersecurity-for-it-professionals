@@ -7,7 +7,7 @@ import random
 import string
 
 HOST = '141.85.224.104'
-PORT = 20002
+PORT = 20102
 
 def is_right_guess(io, guess):
     io.sendline(guess)

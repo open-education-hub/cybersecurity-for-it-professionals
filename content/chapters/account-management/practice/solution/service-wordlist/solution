@@ -1,3 +1,0 @@
-#!/bin/bash
-
-# hydra -L users.txt -P passwords.txt 0.0.0.0 ssh -t 2 -s 20003 -v

@@ -4,7 +4,7 @@ from pwn import *
 import sys
 
 HOST = '141.85.224.104'
-PORT = 20001
+PORT = 20101
 ARTICLES_FILE='articles.txt'
 ADJECTIVES_FILE='adjectives.txt'
 NOUNS_FILE='nouns.txt'
@@ -34,9 +34,9 @@ def break_passphrase(isLocal = 1):
 
     io.recvuntil(b'Start playing!\n')
 
-    articles = getlines('./articles.txt')
-    adjectives = getlines('./adjectives.txt')
-    nouns = getlines('./nouns.txt')
+    articles = getlines('../../support/passphrase-guessing/remote/articles.txt')
+    adjectives = getlines('../../support/passphrase-guessing/remote/adjectives.txt')
+    nouns = getlines('../../support/passphrase-guessing/remote/nouns.txt')
 
     isGuessed = False
     for article in articles:
