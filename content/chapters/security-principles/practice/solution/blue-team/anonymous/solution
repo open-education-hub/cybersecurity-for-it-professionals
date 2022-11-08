@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# As a sysadmin, delete the `credentials.txt` file.
+# If possible, also disable access.

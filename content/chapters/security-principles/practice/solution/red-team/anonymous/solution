@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Use `ftp 0.0.0.0 10021` with `anonymous:pass`.
+# Use `get credentials.txt`
+# Use `ssh ctf@0.0.0.0 -p 10022`
+# Use `anonymous-user-pass` as password
+# Use: `cat /home/ctf/secret`

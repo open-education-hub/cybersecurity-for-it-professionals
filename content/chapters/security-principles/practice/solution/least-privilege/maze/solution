@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# for each user
+#   login via ssh
+#   cat /home/ctf/secret
+# user carl will be able to see the secret because he is part of the `ctf` group
