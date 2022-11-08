@@ -7,7 +7,7 @@ import random
 import string
 
 HOST = '141.85.224.104'
-PORT = 20000
+PORT = 20100
 PASSWORD_LEN = 3
 
 def is_right_guess(io, guess):

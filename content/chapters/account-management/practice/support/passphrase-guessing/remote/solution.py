@@ -4,7 +4,7 @@ from pwn import *
 import sys
 
 HOST = '141.85.224.104'
-PORT = 20001
+PORT = 20101
 ARTICLES_FILE='articles.txt'
 ADJECTIVES_FILE='adjectives.txt'
 NOUNS_FILE='nouns.txt'

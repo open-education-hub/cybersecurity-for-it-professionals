@@ -1,5 +1,5 @@
 # build: docker build -t citp-02_passphrase-guessing .
-# run: docker run -dit --name citp-02_passphrase-guessing -p 20001:1337 citp-02_passphrase-guessing
+# run: docker run -dit --name citp-02_passphrase-guessing -p 20101:1337 citp-02_passphrase-guessing
 # stop: docker stop citp-02_passphrase-guessing
 FROM ubuntu:20.04
 
