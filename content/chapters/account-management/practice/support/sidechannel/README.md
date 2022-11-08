@@ -7,3 +7,4 @@ Logica de verificare a parolei din programul curent este vulnerabilă.
 Observați cum această vulnerabilitate reduce complexitatea ghicirii unei parole de la o funcție exponențială, la una liniară.
 
 Implementați logica necesară aflării mesajului secret.
+Folosiți scheletul de cod disponibil în fisierul `remote/solution.py`.
