@@ -1,6 +1,6 @@
-# build: docker build -t citp-02_password-breaking .
-# run: docker run -dit --name citp-02_password-breaking -p 20100:1337 citp-02_password-breaking
-# stop: docker stop citp-02_password-breaking
+# build: docker build -t citp-02_password-guessing .
+# run: docker run -dit --name citp-02_password-guessing -p 20000:1337 citp-02_password-guessing
+# stop: docker stop citp-02_password-guessing
 FROM ubuntu:20.04
 
 RUN apt-get -y update; apt-get -y install python3 xinetd
