@@ -1,0 +1,50 @@
+#!/bin/bash
+
+password="not-what-you-expect"
+
+if test $(id -u) -ne 0; then
+    echo "You must run this script as root." 1>&2
+    exit 1
+fi
+
+create_ctf_user()
+{
+    # Create user if it does not exist.
+    if ! id ctf > /dev/null 2>&1; then
+        useradd -m -d /home/ctf -s /bin/bash ctf
+    fi
+    # TODO: Check if home is /home/ctf; if not, fail.
+    # Disable password for account (can't login with password).
+    passwd -l ctf > /dev/null
+    # Prevent password changing.
+    passwd -n 9999 ctf > /dev/null
+    # Prevent ctf user from writing to home folder.
+    chown -R root:ctf /home/ctf
+    chmod 750 /home/ctf
+}
+
+copy_flag_to_ctf_user()
+{
+    cp flag /home/ctf/flag
+    chown root:ctf /home/ctf/flag
+    chmod 440 /home/ctf/flag
+}
+
+# Create ctf user if it does not exist and update password.
+create_ctf_user
+echo "ctf:$password" | chpasswd
+passwd -u ctf > /dev/null
+
+# add suid to vim
+chmod g+s /usr/bin/vim
+
+# Flag must be unaccessible to ctf user.
+copy_flag_to_ctf_user
+chmod 400 /home/ctf/flag
+
+
+
+# Announce removal of files.
+echo
+echo "IMPORTANT: Remove all deployed files (flag, setup)."
+echo
