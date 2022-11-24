@@ -1,0 +1,7 @@
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('somenastyrootpass');
+FLUSH PRIVILEGES;
+CREATE DATABASE users;
+USE users;
+CREATE TABLE users (name VARCHAR(20), password VARCHAR(32), secret VARCHAR(32));
+INSERT INTO users VALUES ("admin", "phahh7Gohpha", "SIS{anvil_of_fury}");
+INSERT INTO users VALUES ("ctf", "ctf", "THERE_IS_NO_SECRET");

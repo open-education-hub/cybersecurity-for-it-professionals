@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check for apache2 and php5 and mysql support.
+
+# Move /var/www/html/index.html to /var/www/html/old.index.html.
+
+# Move index.php and login.php in /var/www/html. Update login.php to use root password of MySQL installation.
+
+# Run sql script.
+# cat sql | mysql -u root -p
