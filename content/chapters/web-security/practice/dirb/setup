@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir /var/www/html/xxx
+mkdir /var/www/html/secrets
+mkdir /var/www/html/reusablecontent
+mkdir /var/www/html/advanced
+
+# Get string from flag file, break it in four, write it in files.
+
+echo "SIS{" > /var/www/html/advanced/F
+echo "halls_" > /var/www/html/xxx/L
+echo "of_the" > /var/www/html/reusablecontent/A
+echo "_blind}" > /var/www/html/secrets/G
