@@ -1,80 +1,80 @@
 ## Terminologie de securitate cibernetică
 
-Multe lume crede:
+Multă lume crede:
 
-> Nu am nimic valoros care sa ma transforme intr-o tinta
+> Nu am nimic valoros care să mă transforme într-o țintă
 
-Mindsetul acesta este gresit.
-Informatia este foarte valoroasa si din acest motiv este cel mai de baza motiv care va transforma intr-o tinta.
+Mindsetul acesta este greșit.
+Informația este foarte valoroasă și din acest motiv este cel mai de bază motiv care va transforma într-o țintă.
 
-Multimea tintelor din cadrul unui system se cheama **suprafata de atac**.
+Mulțimea țintelor din cadrul unui sistem se cheamă **suprafața de atac**.
 
-Tintele potentiale expun de obicei **vulnerabilitati** care mai tarziu vor fi **exploatate**.
+Țintele potențiale expun de obicei **vulnerabilități** care mai târziu vor fi **exploatate**.
 
 ### Vulnerabilitate vs. exploit
 
 Pe scurt:
 
-- Vulnerabilitate = problema tehnica, eroare, bug
-- Exploit = utilizarea activa a unei vulnerabilitati
+- Vulnerabilitate = problemă tehnică, eroare, bug
+- Exploit = utilizarea activă a unei vulnerabilități
 
-Conceptele nu se aplica numai pentru Software.
+Conceptele nu se aplică numai pentru Software.
 Oamenii sunt de asemenea vulnerabili.
 Un exemplu: oamenii pot fi *naivi*.
-Naivitatea poate fi foarte usor exploatata de un atacator care ar putea sa manipuleze persoana vulnerabila.
+Naivitatea poate fi foarte ușor exploatată de un atacator care ar putea să manipuleze persoana vulnerabilă.
 
-### Suprafata de atac
+### Suprafața de atac
 
-Tineti minte:
+Țineți minte:
 
-> Un lant este atat de rezistent ca cea mai slaba veriga
+> Un lanț este atât de rezistent ca cea mai slabă verigă
 
-**Suprafata de atac** este compusa in mare din, dar nu limitata la, urmatoarele componente:
+**Suprafața de atac** este compusă în mare din, dar nu limitată la, următoarele componente:
 
-- Oameni (Social Engineering, si da, multimea asta de oameni va include)
-- Perimetrul fizic sau cladirile (Physical Security)
+- Oameni (Social Engineering, și da, mulțimea asta de oameni vă include)
+- Perimetrul fizic sau clădirile (Physical Security)
 - Software (Software Vulnerabilities)
 - Hardware (Hardware Vulnerabilities)
-- Entitati conexe cu tinta (Supply Chain Attacks)
+- Entități conexe cu ținta (Supply Chain Attacks)
 
-Orice este o tinta si exista modalitati pentru a exploata orice vulnerabilitate.
-Cea mai slaba componenta din lista de deasupra poate compromite si restul componentelor.
+Orice este o țintă și există modalități pentru a exploata orice vulnerabilitate.
+Cea mai slabă componenta din lista de deasupra poate compromite și restul componentelor.
 
-Imaginati-va procesul ca fiind un puzzle pe care atacatorul il rezolva.
-Piesele sunt legate impreuna intr-o anumita ordine creativa cu scopul de a atinge un obiectiv.
-Mai multe vulnerabilitati legate impreuna compun ceea ce se numeste un **attack vector** sau **attack chain**.
+Imaginați-vă procesul ca fiind un puzzle pe care atacatorul îl rezolvă.
+Piesele sunt legate împreună într-o anumită ordine creativă cu scopul de a atinge un obiectiv.
+Mai multe vulnerabilități legate împreuna compun ceea ce se numește un **attack vector** sau **attack chain**.
 
 ### Vector de atac
 
 Un atac nu este un proces scurt, cu un singur pas.
-De cele mai multe ori implica o serie de pasi care uneori pot parea necorelati.
+De cele mai multe ori implică o serie de pasi care uneori pot părea necorelați.
 
-Exista exemple reale de atacuri care arata cel mai bine notiunea de **vector de atac**.
+Există exemple reale de atacuri care arată cel mai bine noțiunea de **vector de atac**.
 
-O companie poate fi atacata in multiple moduri:
+O companie poate fi atacată în multiple moduri:
 
-- Din internet (extern)
+- Din Internet (extern)
 - Din interior (intern)
-- Prin oamenii sai
-- Prin systemele sale
-- Prin distribuitori software de la care cumpara servicii sau produse
+- Prin oamenii săi
+- Prin sistemele sale
+- Prin distribuitori software de la care cumpară servicii sau produse
 
 ### Securitatea ca proces (nu finalitate)
 
-Securitatea cibernetica nu este ceva ce obtii astazi si o vei avea mereu.
-Este un obiectiv pe termen lung si este o munca activa.
+Securitatea cibernetică nu este ceva ce obții astăzi și o vei avea mereu.
+Este un obiectiv pe termen lung și este o muncă activă.
 
-Vulnerabilitatile se descopera si se repara la un ritm incredibil de alert.
-Trebuie sa fie cineva care sa aplice update-urile, sa verifice codul scris, sa verifice sistemele aflate in functiune.
-Cineva trebuie de asemenea sa si intervina atunci cand se descopera o bresa de securitate si sa rezolve cat mai rapid problema.
+Vulnerabilitățile se descoperă și se repară la un ritm incredibil de alert.
+Trebuie să fie cineva care să aplice update-urile, să verifice codul scris, să verifice sistemele aflate în funcțiune.
+Cineva trebuie de asemenea să și intervină atunci când se descoperă o breșă de securitate și să rezolve cât mai rapid problema.
 
-Exista o asimetrie disproportionata intre Atacator si Aparator.
-Atacatorul trebuie sa aiba dreptate o singura data.
-Timpul este de partea atacatorului, deoarece el decide cand ataca si unde.
+Există o asimetrie disproporționată între Atacator și Apărător.
+Atacatorul trebuie să aibă dreptate o singură dată.
+Timpul este de partea atacatorului, deoarece el decide când atacă și unde.
 
-Aparatorul trebuie sa se astepte mereu sa fie atacat si trebuie sa aiba grija de toate sistemele.
+Apărătorul trebuie să se aștepte mereu să fie atacat și trebuie să aibă grijă de toate sistemele.
 
-De aici si urmatoarea mare clasificare:
+De aici și următoarea mare clasificare:
 
 - Red Team
 - Blue Team
