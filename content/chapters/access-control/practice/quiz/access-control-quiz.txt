@@ -1,0 +1,17 @@
+1. Principiul de baza care sta in asignarea de roluri
+1.a. Principiul celui mai mic privilegiu
+1.b. Principiul egalitatii
+1.c. Principiul echitatii
+1.d. Principiul celui mai mic rol
+
+2. Care dintre exemplele de mai jos reprezinta aplicarea unui mecanism de sandboxing:
+2.a. Aplicarea capabilitatilor
+2.b. Aplicarea privilegiilor scazute
+2.c. Izolarea unui proces de restul sistemului de fisiere
+2.d. Comanda: cat fisier1.txt
+
+3. Care este diferenta intre containere si masini virtuale
+3.a. Containerele folosesc kernelul sistemului de operare gazda in timp ce masinile virtuale emuleaza un nou sistem hardware.
+3.b. Containerele necesita mai multe resurse
+3.c. Masinile virtuale izoleaza mai slab decat containerele
+3.d. Masinile virtuale functioneaza mai repede
