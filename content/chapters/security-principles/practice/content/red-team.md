@@ -212,4 +212,4 @@ Intrați în directorul `support/red-team/` și parcurgeți exercițiile de mai 
 
 ### Quiz
 
-[Quiz](../quiz/red-team.md)
+[Quiz](../quiz/red-team-quiz.md)
