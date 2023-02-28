@@ -184,6 +184,7 @@ Intrați în directorul `support/red-team/` și parcurgeți exercițiile de mai 
    Comanda va lansa în execuție un container `Docker` aferent challenge-ului `pingme`.
    O aplicație web minimală este expusă pe portul `10002` al mașinii locale.
 
+   Accesați `http://0.0.0.0:10002/index.php` pentru a interacționa cu aplicația.
    Observați că aplicația execută comanda `ping` către o adresă IP dată de utilizator.
 
    Putem presupune că aplicația execută într-o linie de comandă pe server următoarea comandă:
