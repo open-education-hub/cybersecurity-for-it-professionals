@@ -2,12 +2,11 @@
 
 ## Setup
 
-Rulați comenzile de mai jos în linia de comandă pentru a pregăti mediul de lucru:
+Dacă ați făcut modificări în repository, ar fi indicat să le salvați în altă locație.
+Pentru a vă asigura că aveți ultima versiune a repository-ului și că vă aflați în directorul specific laboratorului de astăzi, utilizați comenzile:
 
 ```
-git clone https://github.com/raresvis/cybersecurity-for-it-professionals
-cd cybersecurity-for-it-professionals
-git checkout -b raresvis-wip-account-management origin/raresvis-wip-account-management
+git pull
 cd content/chapters/account-management/practice
 ```
 
