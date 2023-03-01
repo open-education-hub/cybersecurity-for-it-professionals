@@ -92,7 +92,3 @@ Acest lucru înseamnă practici atât la nivelul individual, cât și la nivelul
    ![Probleme Regex](https://imgs.xkcd.com/comics/perl_problems.png "")
 
    Consultați fișierul `solution/blue-team/pingme/fixed.php` pentru o potențială soluție.
-
-### Quiz
-
-[Quiz](../quiz/blue-team.md)
