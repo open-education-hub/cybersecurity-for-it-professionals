@@ -18,3 +18,4 @@ cd content/chapters/account-management/practice
 - [Wordlist VS SHH/FTP](./support/service-wordlist/README.md)
 - [Tutorial Salted Hash](./support/salthash/README.md)
 - [Spargere Hash](./support/breakhash/README.md)
+- [Quiz](./quiz/account-management-quiz.md)
