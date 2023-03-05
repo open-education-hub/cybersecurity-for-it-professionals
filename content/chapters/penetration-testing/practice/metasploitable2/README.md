@@ -1,21 +1,21 @@
 # Metasploitable2
 
-At this point the `Metasploitable2` VM should be imported.
+În acest punct, mașina virtuală `Metasploitable2` ar trebui să fie funcțională.
 
 ## Recon
 
-Start with identifying the IP address of the target machine.
+Primul pas este identificarea adresei IP a mașinii virtuale țintă.
 
-Once that IP is discovered, move on to the Port Scanning phase.
+Odată ce IP-ul este descoperit, trecem la partea de **Port Scanning**.
 
-Observe the diffence between the outputs of the following two commands:
+Observați de asemenea și diferențele de output dintre cele două comenzi:
 
 ``` shell
 nmap -p- <targetIP>
 nmap -p- -sV <targetIP>
 ```
 
-The second options should provide a lot more detail in terms of *software versions*.
+A doua comandă ar trebui să dezvăluie mult mai multe detalii, mai precis **versiuni software**.
 
 ``` text
 $ nmap -p- -sV 192.168.56.104
@@ -60,13 +60,13 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 131.40 seconds
 ```
 
-Furthermore, we can even discover the OS via the following:
+Mai mult, putem descoperi (cu un anumit grad de precizie) sistemul de operare folosind:
 
 ``` shell
 sudo nmap -p- -O <targetIP>
 ```
 
-This should provide an output similar to:
+Output-ul ar trebui să fie:
 
 ``` text
 $ sudo nmap -p- -O 192.168.56.104
@@ -121,10 +121,10 @@ Nmap done: 1 IP address (1 host up) scanned in 3.76 seconds
 
 ## Exploitation
 
-Armed with the knowledge gained via Recon, we can move further and exploit the services.
+Înarmați cu informațiile obținute până acum, putem avansa către faza de exploatare a serviciilor vulnerabile.
 
-Exploit as many services as possible.
+Exploatați cât mai multe servicii expuse de mașina virtuală țintă.
 
-Inspect the service version exposed by each open port.
-Search online for any information regarding previously disclosed vulnerabilities.
-Next use `metasploit` to exploit any vulnerable service.
+În primul rând inspectați versiunea fiecărui serviciu expus.
+Căutați online potențiale exploit-uri pentru versiunile în cauză.
+Apoi folosiți `metasploit` pentru a exploata serviciile.
