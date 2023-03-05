@@ -12,8 +12,8 @@ cd content/chapters/web-security/practice
 
 ## Conținut
 
-1. [dirb](./dirb)
-1. [Insecure Cookie](./insecure-cookie)
-1. [Silent Speaker](./silent-speaker)
-1. [SQL Injection](./sqlinject)
-1. [Web](./web)
+1. [dirb](./support/dirb)
+1. [Insecure Cookie](./support/insecure-cookie)
+1. [Silent Speaker](./support/silent-speaker)
+1. [SQL Injection](./support/sqlinject)
+1. [Web](./support/web)
