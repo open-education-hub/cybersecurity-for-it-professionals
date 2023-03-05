@@ -12,6 +12,6 @@ RUN echo "ctf:not-what-you-expect" | chpasswd && passwd -u ctf > /dev/null
 COPY secret /home/ctf/secret
 RUN chown root:root /home/ctf/secret \
     && chmod 440 /home/ctf/secret \
-    && chmod g+s /usr/bin/vim
+    && chmod u+s /usr/bin/vim
 
 ENTRYPOINT service ssh restart && /bin/bash

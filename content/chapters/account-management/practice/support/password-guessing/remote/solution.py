@@ -32,6 +32,15 @@ def break_password(isLocal = 1):
     #TODO: stop when isGuessed is True
     #TODO: use itertools.product() to generate all possible combinations
     #TODO: use the is_right_guess() function to check each and every guess
+    for parola_curenta in itertools.product(string.ascii_lowercase, repeat=PASSWORD_LEN):
+        parola_string = ''.join(parola_curenta)
+        print('incercam: {}'.format(parola_string))
+
+        if is_right_guess(io, parola_string):
+            isGuessed = True
+            break
+
+        print(get_secret(io))
 
     #TODO: once is_right_guess() returns true, use get_secret(io) to get the secret
     print(get_secret(io))
