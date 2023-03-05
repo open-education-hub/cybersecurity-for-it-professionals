@@ -1,18 +1,15 @@
 # Runtime Application Security
 
-Clonați [repository-ul](https://github.com/open-education-hub/cybersecurity-for-it-professionals), accesați branch-ul `raresvis-wip-runtime-application-security` și directorul `content/chapters/runtime-security/practice/`:
+## Setup
+
+Dacă ați făcut modificări în repository, ar fi indicat să le salvați în altă locație. Pentru a vă asigura că aveți ultima versiune a repository-ului și că vă aflați în directorul specific laboratorului de astăzi, utilizați comenzile:
 
 ```
-$ git clone https://github.com/open-education-hub/cybersecurity-for-it-professionals
-$ cd cybersecurity-for-it-professionals/
-$ git remote add raresvis https://github.com/raresvis/cybersecurity-for-it-professionals
-$ git fetch raresvis
-$ git checkout -b raresvis-wip-runtime-application-security raresvis/raresvis-wip-runtime-application-security
-$ cd content/chapters/runtime-security/practice/
-$ ls
-arbitrary-read/   buffer-management-notok/  buffer-management-segfault/  python-memory-management/  shellcode-input/
-arbitrary-write/  buffer-management-ok/     code-reuse/                  README.md                  shellcode-static/
+git pull
+cd content/chapters/runtime-security/practice
 ```
+
+## Conținut
 
 Parcurgeți subdirectoarele în ordinea de mai jos.
 Parcurgeți fișierul `README.md` și fișierele din fiecare subdirector.
