@@ -8,4 +8,4 @@ Rulați comanda:
 ./generate.py
 ```
 
-ca să identifiți sume de control pentru șiruri.
+ca să identificați sume de control pentru șiruri.
