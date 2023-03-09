@@ -22,9 +22,9 @@ cd content/chapters/data-protection/practice
 
 ## Conținut
 
-1. [Wrong File](wrong-file/README.md)
-1. [3 Letters SHA256](3-letters-sha256/README.md)
-1. [Map Certificate Domain](map-certificate-domain/README.md)
-1. [Cipher Key Pair](cipher-key-pair/README.md)
-1. [Cipher Private Key Pair](cipher-private-key-pair/README.md)
-1. [Correct Signature](correct-signature/README.md)
+1. [Wrong File](./support/wrong-file/README.md)
+1. [3 Letters SHA256](./support/3-letters-sha256/README.md)
+1. [Map Certificate Domain](./support/map-certificate-domain/README.md)
+1. [Cipher Key Pair](./support/cipher-key-pair/README.md)
+1. [Cipher Private Key Pair](./support/cipher-private-key-pair/README.md)
+1. [Correct Signature](./support/correct-signature/README.md)
