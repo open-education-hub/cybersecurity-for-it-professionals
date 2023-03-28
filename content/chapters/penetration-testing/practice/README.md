@@ -12,7 +12,7 @@ cd content/chapters/penetration-testing/practice
 
 ## Conținut
 
-1. [Setup](./setup)
-1. [Infrastructura de test](./infrastructure)
-1. [Metasploit Framework](./metasploit)
-1. [Metasploitable2](./metasploitable2)
+1. [Setup](./support/setup)
+1. [Infrastructura de test](./support/infrastructure)
+1. [Metasploit Framework](./support/metasploit)
+1. [Metasploitable2](./support/metasploitable2)
