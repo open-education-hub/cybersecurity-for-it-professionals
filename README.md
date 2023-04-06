@@ -6,7 +6,7 @@ They are to be used by teachers, trainers, students and hobbyists who have an IT
 ## Using the Content
 
 Content is located in the `content/` folder.
-It consists of 8 chapters:
+It consists of 10 chapters:
 
 * [Security Principles and Terminology](content/chapters/security-principles/)
 * [Account Management and Password](content/chapters/account-management/)
@@ -16,6 +16,8 @@ It consists of 8 chapters:
 * [Web Application Security](content/chapters/web-security/)
 * [Network Monitoring and Defense](content/chapters/network-monitoring/)
 * [Penetration Testing](content/chapters/penetration-testing/)
+* [Security Audit](content/chapters/security-audit/)
+* [Intrusion Detection and Intrusion Prevention](content/chapters/detection-prevention/)
 
 Each chapter has its own folder.
 Content for each chapter is split in two subfolders:
