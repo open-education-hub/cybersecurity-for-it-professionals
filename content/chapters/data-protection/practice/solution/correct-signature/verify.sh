@@ -3,6 +3,7 @@
 num=20
 
 pushd ../../support/correct-signature/ > /dev/null
+gpg --import public.gpg
 for i in $(seq -f "%02g" 0 $(($num-1))); do
     gpg --armor --verify file-"$i".sig file-"$i".txt || echo file-"$i".txt
 done
