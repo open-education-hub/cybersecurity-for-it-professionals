@@ -14,8 +14,8 @@ Sunt necesare următoarele configurări:
   - Selectați mașina virtuală `Kali Linux` din listă
     - Click dreapta > Settings
     - Tab-ul `Network`
-    - Asigurați-vă că `Adapter 1` este `NAT`
-    - Asigurați-vă că `Adapter 2` este `Host-only Adapter` și este setat la `vboxnet0`
+      - Asigurați-vă că `Adapter 1` este `NAT`
+      - Asigurați-vă că `Adapter 2` este `Host-only Adapter` și este setat la `vboxnet0`
   - Credențiale: `kali:kali`
 - Mașina virtuală `Metaspoitable2`
   - Importați mașina în VirtualBox
